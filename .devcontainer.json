@@ -1,0 +1,27 @@
+{
+    "name": "AIForIndustry",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "customizations":{
+        "vscode": {
+            "extensions": [
+                // List of extensions to install in the dev container
+                "ms-vsliveshare.vsliveshare",
+                "ms-python.python"
+            ],
+            "settings": {
+                // Additional settings for the dev container
+            }
+        }
+    },
+    "mounts": [
+        "source=${localEnv:HOME}/.config/gcloud,target=/root/.config/gcloud,type=bind"
+    ],
+    "containerEnv": {
+        // run `gcloud auth application-default login` before starting the container
+        "GOOGLE_APPLICATION_CREDENTIALS": "/root/.config/gcloud/application_default_credentials.json"
+    },
+    // The default behaviour of a devcontainer is to run /bin/bash as an entrypoint.
+    // If you want to override this, you specify `"overrideCommand": false`
+    "overrideCommand": true
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Text Generator Client</title>
+</head>
+<body>
+    <h2>Text Generator</h2>
+    <input type="text" id="queryInput" placeholder="Enter your text here">
+    <button onclick="sendText()">Generate</button>
+    <p id="responseText">Response will appear here...</p>
+
+    <script>
+        function sendText() {
+            const url = "/generate";
+            const data = {
+                query: document.getElementById("queryInput").value
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                document.getElementById("responseText").innerHTML = data.text; // Adjust based on actual response structure
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
