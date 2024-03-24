@@ -1,7 +1,7 @@
 # AI For Industry
 This repository contains the code for the AI for Industry workshop series at KTH AI Society. The workshop series is organized by Timothy Lindblom and aimed at teaching students how to work with data at scale.
 
-## Workshop 1 - Data Wrangling in Python using DuckDB - 2024-02-29
+## [Workshop 1 - Data Wrangling in Python using DuckDB - 2024-02-29](https://docs.google.com/presentation/d/1MMGbSta_wp6v5x56eiBCCAfGKc44d3qRd1ndobflJrg/edit?usp=sharing)
 We focus on data wrangling in Python using DuckDB. DuckDB is an embeddable SQL OLAP database management system. It is designed to be easy to install, use, and extend, while remaining fast and reliable.
 
 ## Workshop 2 - Docker and Google Cloud - 2024-03-25
