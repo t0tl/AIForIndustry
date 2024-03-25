@@ -8,8 +8,6 @@ RUN pip install -r requirements.txt
 
 RUN python data_storage/db.py
 
-EXPOSE 80
-
 # Run app.py when the container launches
 CMD ["python", "app.py"]
 
