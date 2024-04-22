@@ -9,7 +9,7 @@ In this workshop, the use of Docker for cloud applications and workplace environ
 
 An real-life example is shown via a RAG (Retrieval Augmented Generation) pipeline using OpenAIs API and hosting on Google Cloud.
 
-## Workshop 3  - Kubernetes (Guest: **Revealed soon**)
+## Workshop 3 - [Kubernetes](https://github.com/MMorsell/k8s-demo) (Guest: Martin Mörsell) - 2024-04-22
 
 ## Workshop 4 - TBD
 
